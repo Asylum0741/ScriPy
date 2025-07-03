@@ -15,10 +15,18 @@ ENTRY_IDS = {
     'Year of Study': 'entry.479301265',
 }
 
+# Change the name of excel sheet from here. Make sure your excel sheet is in same folder as main.py (this file)
+EXCEL_SHEET = 'students.xlsx'
+
+# Change Random delay here by adjusting the range. (Start, End). (10,20) means a random delay between 10s to 20s
+delay = random.randint(10, 20)
+
+# NO NEED TO CHANGE ANYTHING FURTHER
+
 FORM_URL = FORM_URL.replace("viewform", "formResponse")
 
 try:
-    df = pd.read_excel('students.xlsx') # Change the name of excel sheet from here. Make sure your excel sheet is in same folder as main.py (this file)
+    df = pd.read_excel(EXCEL_SHEET)
 except Exception as e:
     print(f"[!] Failed to load Excel file: {e}")
     sys.exit(1)
@@ -49,7 +57,6 @@ for idx, row in df.iterrows():
         print(f"[!] Error submitting row {idx + 1}: {e}")
         sys.exit(1)
 
-    delay = random.randint(10, 20) # Change Random delay here by adjusting the range. (Start, End)
 
     print(f"⏳ Waiting for {delay} seconds before next submission...")
     time.sleep(delay)
