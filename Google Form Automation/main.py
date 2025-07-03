@@ -5,7 +5,7 @@ import random
 import sys
 
 # Open google form and copy paste the link below.
-FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc50CdwmVWbDCKOr1XoX1g2GVsVnNX35oqmX7bHElieKEQP8A/formResponse"
+FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc50CdwmVWbDCKOr1XoX1g2GVsVnNX35oqmX7bHElieKEQP8A/viewform"
 
 # Change the values of Excel sheet headers and Google form questions entry Id. Check ReadMe for how to get the entry id.
 ENTRY_IDS = {
@@ -15,6 +15,7 @@ ENTRY_IDS = {
     'Year of Study': 'entry.479301265',
 }
 
+FORM_URL = FORM_URL.replace("viewform", "formResponse")
 
 try:
     df = pd.read_excel('students.xlsx') # Change the name of excel sheet from here. Make sure your excel sheet is in same folder as main.py (this file)
