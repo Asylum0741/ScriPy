@@ -18,10 +18,7 @@ ENTRY_IDS = {
 # Change the name of excel sheet from here. Make sure your excel sheet is in same folder as main.py (this file)
 EXCEL_SHEET = 'students.xlsx'
 
-# Change Random delay here by adjusting the range. (Start, End). (10,20) means a random delay between 10s to 20s
-delay = random.randint(10, 20)
 
-# NO NEED TO CHANGE ANYTHING FURTHER
 
 FORM_URL = FORM_URL.replace("viewform", "formResponse")
 
@@ -57,6 +54,9 @@ for idx, row in df.iterrows():
         print(f"[!] Error submitting row {idx + 1}: {e}")
         sys.exit(1)
 
+
+    # Change Random delay here by adjusting the range. (Start, End). (10,20) means a random delay between 10s to 20s
+    delay = random.randint(5, 20)
 
     print(f"⏳ Waiting for {delay} seconds before next submission...")
     time.sleep(delay)
