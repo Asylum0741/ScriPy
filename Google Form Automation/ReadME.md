@@ -27,6 +27,31 @@ pip install pandas requests openpyxl
 
 ---
 
+## 💬 Prompt to generate a dummy Excel sheet.
+
+🎯 Task:
+Generate a realistic Excel sheet with dummy data to match the structure of a Google Form.
+
+🧾 Form Structure:
+- Field 1: [Label] ([Type])
+- Field 2: [Label] ([Type])
+- Field 3: [Label] ([Type with options if applicable])
+- ...
+(Note: Replace [Label] and [Type] with actual values. Supported types: Text, Email, Number, Dropdown, Radio, Checkbox)
+
+🔢 Number of Rows:
+- Generate [X] rows of unique, varied dummy data.
+
+📄 Output Format:
+- Excel (.xlsx) file with a header row.
+- Column headers must exactly match the field labels above.
+
+📌 Notes:
+- For "Email", base the value on the generated names.
+- For "Mobile Number", use valid-looking values (e.g., 10-digit Indian format).
+- For multiple-choice or dropdown fields, pick randomly from given options.
+
+
 ## 📄 Excel Sheet Format (`students.xlsx`)
 
 The Excel file must be placed in the same folder as `main.py`. The headers in your Excel file must exactly match the keys in the `ENTRY_IDS` dictionary inside the script.
