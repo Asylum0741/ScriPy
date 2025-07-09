@@ -69,7 +69,7 @@ The Excel file must be placed in the same folder as `main.py`. The headers in yo
 
 I have made a dedicated youtube video for this watch it here:
 
-(https://www.youtube.com/watch?v=rL4b6JKEVpo)
+[![WATCH THE VIDEO HERE](http://img.youtube.com/vi/rL4b6JKEVpo/0.jpg)](http://www.youtube.com/watch?v=rL4b6JKEVpo)
 
 ```python
 ENTRY_IDS = {
