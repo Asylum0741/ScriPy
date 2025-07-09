@@ -68,7 +68,8 @@ The Excel file must be placed in the same folder as `main.py`. The headers in yo
 ## 🔗 How to Get Google Form Entry IDs
 
 I have made a dedicated youtube video for this watch it here:
-[![Watch the video](https://img.youtube.com/vi/rL4b6JKEVpo/0.jpg)](https://www.youtube.com/watch?v=rL4b6JKEVpo)
+
+(https://www.youtube.com/watch?v=rL4b6JKEVpo)
 
 ```python
 ENTRY_IDS = {
